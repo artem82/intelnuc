@@ -40,7 +40,7 @@ apt install sudo
 sudo usermod -aG sudo username
 ```
 
-:ballot_box_with_check: Выход из учетной записи root  
+:point_uppoint_up: Выход из учетной записи root (не нужно) 
 ```yaml
 exit
 ```
