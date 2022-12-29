@@ -98,6 +98,7 @@ apt --fix-broken install
 ```yaml
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
+### [ZIGBEE2MQTT]([https://youtu.be/i4bp-s20Dm8](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt)
 
 ____
 #### Поддержать развитие проекта *Умный дом с Alex Kvazis*    
