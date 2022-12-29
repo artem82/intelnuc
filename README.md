@@ -94,7 +94,9 @@ apt --fix-broken install
 `hciconfig`
 
 :ballot_box_with_check: Иногда необходимо вовсе отключить на Debian любые энергосберегающие функции (сон, гибернация, гибридный сон и т.п.), тогда пригодится следующая команда.
-`sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target`
+```yaml
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+```
 
 ____
 #### Поддержать развитие проекта *Умный дом с Alex Kvazis*    
