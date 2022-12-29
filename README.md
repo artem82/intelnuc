@@ -98,6 +98,12 @@ apt --fix-broken install
 ```yaml
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
+:ballot_box_with_check: Hacs
+```yaml
+wget -O - https://get.hacs.xyz | bash -
+```
+
+
 ### [ZIGBEE2MQTT инструкция](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt)
 
 ____
