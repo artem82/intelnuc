@@ -40,7 +40,7 @@ apt install sudo
 sudo usermod -aG sudo username
 ```
 
-:point_uppoint_up: Выход из учетной записи root (не нужно) 
+:point_up: Выход из учетной записи root (не нужно) 
 ```yaml
 exit
 ```
