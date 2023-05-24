@@ -102,6 +102,7 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 ```yaml
 wget -O - https://get.hacs.xyz | bash -
 ```
+# ZIGBE2MQTT
 :ballot_box_with_check: Команда показать текущие USB устройства
 ```yaml
 lsusb
