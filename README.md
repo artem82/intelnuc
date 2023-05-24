@@ -103,8 +103,9 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 wget -O - https://get.hacs.xyz | bash -
 ```
 :ballot_box_with_check: Команда показать текущие USB устройства
+```yaml
 lsusb
-
+```
 
 ### [ZIGBEE2MQTT инструкция](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt)
 
