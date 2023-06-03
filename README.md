@@ -109,7 +109,7 @@ lsusb
 ```
 
 ### [ZIGBEE2MQTT инструкция](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt)
-### [HYPERION install]([https://github.com/zigbee2mqtt/hassio-zigbee2mqtt](https://docs.hyperion-project.org/en/user/Installation.html#rpi-debian-ubuntu)
+### [HYPERION install](https://docs.hyperion-project.org/en/user/Installation.html#rpi-debian-ubuntu)
 
 
 ____
