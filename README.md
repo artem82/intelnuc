@@ -16,6 +16,7 @@
 :white_check_mark: **Удобный SSH клиент** - [Putty](https://www.putty.org/)    
 
 ### Home Assistant:    
+/usr/share/hassio/homeassistant
 
 :ballot_box_with_check: Переход в режим root    
 ```yaml
