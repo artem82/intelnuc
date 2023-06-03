@@ -86,8 +86,11 @@ wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent
 Установка - `dpkg -i os-agent_1.5.1_linux_aarch64.deb`  
 
 
-:ballot_box_with_check: Установка Home Assisistant Supervised    
-Загружаем - `wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb`    
+:ballot_box_with_check: Установка Home Assisistant Supervised 
+Загружаем 
+```yaml
+wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
+```
 Установка - `dpkg -i homeassistant-supervised.deb`  
 
 :ballot_box_with_check: Исправление поврежденных пакетов
