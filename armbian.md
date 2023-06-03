@@ -1,12 +1,4 @@
-### [Beelink GK Mini часть 2 - Autoboot, Debian 11, Supervised Home Assistant](https://youtu.be/RqW5q-0RYio)
-
-<a href="https://www.youtube.com/channel/UCcq9onYHbs6go3kDpfBoqhg?sub_confirmation=1" target="_blank"><img src="https://raw.githubusercontent.com/kvazis/training/master/lessons/img/subscribe.png" alt="Subscribe" style="height: 71px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-### [Beelink GK Mini на Celeron J4125 - обзор, легкая установка Home Assistant OS - пошаговая инструкция](https://youtu.be/i4bp-s20Dm8)
-### [Установка Ubuntu 20.04 LTS и Home Assistant Supervised на мини пк GK3V. Проще, удобнее, красивее](https://www.youtube.com/watch?v=6l8swO5H-9s)
-
-
-#### Команды и ссылки из урока:    
+  
 
 :white_check_mark: **Оригинальная инструкция** - [Community Home Assistant Forum](https://community.home-assistant.io/t/installing-home-assistant-supervised-on-debian-11/200253#installing-home-assistant-supervised-on-debian-11-1)    
 
@@ -14,6 +6,12 @@
 :white_check_mark: **Неофициальный репозиторий Debian 11 non-free с драйверами** - [Загрузка образа](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.5.0+nonfree/amd64/iso-dvd/)    
 
 :white_check_mark: **Удобный SSH клиент** - [Putty](https://www.putty.org/)    
+### ARMBIAN
+:ballot_box_with_check: ARMBIAN
+```yaml
+https://github.com/ophub/amlogic-s9xxx-armbian
+```
+https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_bullseye_save_2023.05/Armbian_23.05.0_amlogic_s912_bullseye_6.1.30_server_2023.05.26.img.gz
 
 ### Home Assistant:    
 /usr/share/hassio/homeassistant
@@ -76,13 +74,10 @@ curl -fsSL get.docker.com | sh
 
 :ballot_box_with_check: Загружаем агента
 ```yaml
-wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_x86_64.deb
+wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_aarch64.deb
 ```
 (номер меняем на актуальный)  
-Загружаем - `wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_x86_64.deb` (номер меняем на актуальный)    
-Загружаем - `wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_aarch64.deb`
-
-Установка - `dpkg -i os-agent_1.5.1_linux_x86_64.deb`  
+ 
 Установка - `dpkg -i os-agent_1.5.1_linux_aarch64.deb`  
 
 
@@ -130,11 +125,6 @@ lsusb
 wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
 ```
 
-#### ARMBIAN
-:ballot_box_with_check: wireguard-install
-```yaml
-https://github.com/ophub/amlogic-s9xxx-armbian
-```
 
 ____
 
