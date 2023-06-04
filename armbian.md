@@ -15,7 +15,7 @@ https://github.com/ophub/amlogic-s9xxx-armbian
 ```
 https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_bullseye_save_2023.05/Armbian_23.05.0_amlogic_s912_bullseye_6.1.30_server_2023.05.26.img.gz
 
-### Home Assistant:    
+## Home Assistant:    
 
 Путь - `/usr/share/hassio/homeassistant ....`    
 
@@ -57,7 +57,7 @@ curl -fsSL get.docker.com | sh
 ```yaml
 sudo usermod -aG docker root
 ```
-
+#### Home Assistant OS-Agent : 
 :ballot_box_with_check: Установка OS-Agent    
 :white_check_mark: [Последний релиз](https://github.com/home-assistant/os-agent/releases/latest)  
 
@@ -69,13 +69,15 @@ wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent
  
 Установка - `dpkg -i os-agent_1.5.1_linux_aarch64.deb`  
 
-
-:ballot_box_with_check: Установка Home Assisistant Supervised 
-Загружаем 
+#### Home Assistant Supervised : 
+:ballot_box_with_check: Загружаем Home Assisistant Supervised 
 ```yaml
 wget https://github.com/home-assistant/supervised-installer/releases/latest/download/homeassistant-supervised.deb
 ```
-Установка - `dpkg -i homeassistant-supervised.deb`  
+:ballot_box_with_check: Установка Home Assisistant Supervised 
+```yaml
+dpkg -i homeassistant-supervised.deb
+```
 
 :ballot_box_with_check: Исправление поврежденных пакетов
 ```yaml
