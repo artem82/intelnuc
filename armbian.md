@@ -47,6 +47,7 @@ apt --fix-broken install
 ```yaml
 apt-get install jq wget curl udisks2 libglib2.0-bin network-manager dbus -y
 ```
+sudo apt search apparmor | grep apparmor
 
 :ballot_box_with_check: Установка Docker    
 ```yaml
