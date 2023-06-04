@@ -53,6 +53,10 @@ sudo apt search apparmor | grep apparmor
 ```yaml
 curl -fsSL get.docker.com | sh
 ```
+:ballot_box_with_check: Добавление пользователя в DOCKER   
+```yaml
+sudo usermod -aG docker root
+```
 
 :ballot_box_with_check: Установка OS-Agent    
 :white_check_mark: [Последний релиз](https://github.com/home-assistant/os-agent/releases/latest)  
