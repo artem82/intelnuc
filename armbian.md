@@ -86,10 +86,10 @@ apt --fix-broken install
 ```
 ВЫБИРАЕМ - `odroid c2`
 
+#### Home Assistant Разное : 
+
 :ballot_box_with_check: Перечень контейнеров
 `docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}"` 
-
-#### Home Assistant Разное : 
 
 :ballot_box_with_check: Установка Bluetooth
 `apt install bluez`
