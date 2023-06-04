@@ -1,11 +1,11 @@
   
 # HOME ASSISTANT Amlogic S912
-:white_check_mark: **Оригинальная инструкция** - [Community Home Assistant Forum](https://community.home-assistant.io/t/installing-home-assistant-supervised-on-debian-11/200253#installing-home-assistant-supervised-on-debian-11-1)    
-:white_check_mark: **Еще инструкция** - [Community Home Assistant Forum](https://community.home-assistant.io/t/installing-home-assistant-supervised-on-a-raspberry-pi-with-debian-11/247116)
+:white_check_mark: **Инструкция 1** - [Community Home Assistant Forum](https://gist.github.com/saper-2/544928b61060d4847cf5617641d876ab)    
+:white_check_mark: **Инструкция 2** - [Community Home Assistant Forum](https://community.home-assistant.io/t/installing-home-assistant-supervised-on-a-raspberry-pi-with-debian-11/247116)
 
 
 :white_check_mark: **Официальный репозиторий Debian 11** - [Загрузка образа](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/)    
-:white_check_mark: **Неофициальный репозиторий ARMBIAN S912** - [Загрузка образа](https://github.com/ophub/amlogic-s9xxx-armbian)    
+:white_check_mark: **Неофициальный репозиторий ARMBIAN S912 ophub** - [Загрузка образа](https://github.com/ophub/amlogic-s9xxx-armbian)    
 
 :white_check_mark: **Удобный SSH клиент** - [Putty](https://www.putty.org/)    
 ### ARMBIAN
