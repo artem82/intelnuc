@@ -16,21 +16,8 @@ https://github.com/ophub/amlogic-s9xxx-armbian
 https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_bullseye_save_2023.05/Armbian_23.05.0_amlogic_s912_bullseye_6.1.30_server_2023.05.26.img.gz
 
 ### Home Assistant:    
-/usr/share/hassio/homeassistant
 
-:ballot_box_with_check: Переход в режим root    
-```yaml
-su
-```
-
-:ballot_box_with_check: Редактирование источников    
-```yaml
-nano /etc/apt/sources.list
-```
-Комментируем строку ` deb cdrom:[Debian GNU/Linux ....`    
-
-`Ctrl X` - для выхода    
-`Y` для сохранения    
+Путь - `/usr/share/hassio/homeassistant ....`    
 
 :ballot_box_with_check: Установка sudo       
 ```yaml
@@ -40,11 +27,6 @@ apt install sudo
 :ballot_box_with_check: Добавление пользователя в sudo   
 ```yaml
 sudo usermod -aG sudo username
-```
-
-:point_up: Выход из учетной записи root (не нужно) 
-```yaml
-exit
 ```
 
 :ballot_box_with_check: Выполнение команд с правами root
