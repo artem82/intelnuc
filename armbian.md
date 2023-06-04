@@ -5,15 +5,15 @@
 
 
 :white_check_mark: **Официальный репозиторий Debian 11** - [Загрузка образа](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/)    
-:white_check_mark: **Неофициальный репозиторий ARMBIAN S912 ophub** - [Загрузка образа](https://github.com/ophub/amlogic-s9xxx-armbian)    
+:white_check_mark: **Неофициальный репозиторий ARMBIAN S912 ophub** - [Загрузка образа](https://github.com/ophub/amlogic-s9xxx-armbian)
+`https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_bullseye_save_2023.05/Armbian_23.05.0_amlogic_s912_bullseye_6.1.30_server_2023.05.26.img.gz`
 
 :white_check_mark: **Удобный SSH клиент** - [Putty](https://www.putty.org/)    
 ### ARMBIAN
-:ballot_box_with_check: ARMBIAN
+:ballot_box_with_check: репозиторий ARMBIAN amlogic ophub
 ```yaml
 https://github.com/ophub/amlogic-s9xxx-armbian
 ```
-https://github.com/ophub/amlogic-s9xxx-armbian/releases/download/Armbian_bullseye_save_2023.05/Armbian_23.05.0_amlogic_s912_bullseye_6.1.30_server_2023.05.26.img.gz
 
 ## Home Assistant:    
 
