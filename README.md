@@ -99,10 +99,10 @@ dpkg -i homeassistant-supervised.deb
 ```yaml
 apt --fix-broken install
 ```
+#### Home Assistant Разное : 
 
 :ballot_box_with_check: Перечень контейнеров
 `docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}"` 
-
 
 :ballot_box_with_check: Установка Bluetooth
 `apt install bluez`
@@ -118,6 +118,7 @@ sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.ta
 ```yaml
 wget -O - https://get.hacs.xyz | bash -
 ```
+
 ## ZIGBE2MQTT
 :ballot_box_with_check: Команда показать текущие USB устройства
 ```yaml
