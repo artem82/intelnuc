@@ -133,11 +133,7 @@ lsusb
 wget https://git.io/wireguard -O wireguard-install.sh && bash wireguard-install.sh
 ```
 
-#### ARMBIAN
-:ballot_box_with_check: wireguard-install
-```yaml
-https://github.com/ophub/amlogic-s9xxx-armbian
-```
+
 
 ____
 
