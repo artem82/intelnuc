@@ -96,6 +96,9 @@ wget https://github.com/home-assistant/supervised-installer/releases/latest/down
 ```yaml
 dpkg -i homeassistant-supervised.deb
 ```
+```yaml
+apt install ./homeassistant-supervised.deb
+```
 Возможно:
 https://geekrepos.com/home-assistant/supervised-installer/issues/304
 
