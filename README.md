@@ -63,9 +63,24 @@ apt update && sudo apt upgrade -y && sudo apt autoremove -y
 apt --fix-broken install
 ```
 
-:ballot_box_with_check: Установка зависимостей
+:ballot_box_with_check: Установка зависимостей №1
 ```yaml
 apt-get install jq wget curl udisks2 libglib2.0-bin network-manager dbus -y
+```
+:ballot_box_with_check: Установка зависимостей №2
+```yaml
+apt install \
+apparmor \
+jq \
+wget \
+curl \
+udisks2 \
+libglib2.0-bin \
+network-manager \
+dbus \
+lsb-release \
+systemd-journal-remote \
+systemd-resolved -y
 ```
 
 :ballot_box_with_check: Установка Docker    
