@@ -99,8 +99,10 @@ wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent
 (номер меняем на актуальный)  
 Загружаем - `wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_x86_64.deb` (номер меняем на актуальный)    
 
-Установка - `dpkg -i os-agent_1.5.1_linux_x86_64.deb`  
-
+Установка `dpkg -i os-agent_1.5.1_linux_x86_64.deb`  
+```yaml
+dpkg -i os-agent_1.5.1_linux_x86_64.deb
+```
 #### Home Assistant Supervised : 
 
 :ballot_box_with_check: Загружаем Home Assisistant Supervised 
