@@ -96,6 +96,8 @@ wget https://github.com/home-assistant/supervised-installer/releases/latest/down
 ```yaml
 dpkg -i homeassistant-supervised.deb
 ```
+Возможно:
+https://geekrepos.com/home-assistant/supervised-installer/issues/304
 
 :ballot_box_with_check: Исправление поврежденных пакетов
 ```yaml
