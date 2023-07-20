@@ -41,7 +41,9 @@ apt install sudo
 ```yaml
 sudo usermod -aG sudo username
 ```
-
+```yaml
+sudo usermod -aG sudo artem
+```
 :point_up: Выход из учетной записи root (не нужно) 
 ```yaml
 exit
