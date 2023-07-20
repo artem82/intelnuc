@@ -8,8 +8,8 @@
 
 #### Команды и ссылки из урока:    
 
-:white_check_mark: **Оригинальная инструкция** - [Community Home Assistant Forum](https://community.home-assistant.io/t/installing-home-assistant-supervised-on-debian-11/200253#installing-home-assistant-supervised-on-debian-11-1)    
-
+:white_check_mark: **Оригинальная инструкция** - [Community Home Assistant Forum](https://community.home-assistant.io/t/installing-home-assistant-supervised-on-debian-11/200253#installing-home-assistant-supervised-on-debian-11-1)   
+:white_check_mark: **Официальный репозиторий Debian 12** - [Загрузка образа]((https://cdimage.debian.org/cdimage/unofficial/non-free/firmware/bookworm/12.0.0/)   
 :white_check_mark: **Официальный репозиторий Debian 11** - [Загрузка образа](https://cdimage.debian.org/debian-cd/current/amd64/iso-dvd/)    
 :white_check_mark: **Неофициальный репозиторий Debian 11 non-free с драйверами** - [Загрузка образа](https://cdimage.debian.org/cdimage/unofficial/non-free/cd-including-firmware/11.5.0+nonfree/amd64/iso-dvd/)    
 
