@@ -81,6 +81,11 @@ lsb-release \
 systemd-journal-remote \
 systemd-resolved -y
 ```
+:ballot_box_with_check: Перезагрузка
+```yaml
+reboot
+```
+
 
 :ballot_box_with_check: Установка Docker    
 ```yaml
