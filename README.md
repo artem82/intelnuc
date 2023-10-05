@@ -104,7 +104,7 @@ wget https://github.com/home-assistant/os-agent/releases/download/1.6.0/os-agent
 Загружаем - `wget https://github.com/home-assistant/os-agent/releases/download/1.6.0/os-agent_1.6.0_linux_x86_64.deb` (номер меняем на актуальный)    
 
 Установка `dpkg -i os-agent_1.6.0_linux_x86_64.deb`
-
+sudo - i должно работать
 ```yaml
 dpkg -i os-agent_1.6.0_linux_x86_64.deb
 ```
