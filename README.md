@@ -83,7 +83,7 @@ systemd-resolved -y
 ```
 :ballot_box_with_check: Перезагрузка
 ```yaml
-reboot
+systemctl reboot
 ```
 
 
