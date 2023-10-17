@@ -144,6 +144,7 @@ apt --fix-broken install
 ```yaml
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
+#### После настройки HA (192.168.1.X:8123)
 :ballot_box_with_check: Hacs
 ```yaml
 wget -O - https://get.hacs.xyz | bash -
