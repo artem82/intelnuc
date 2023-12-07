@@ -135,7 +135,9 @@ apt --fix-broken install
 `docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}"` 
 
 :ballot_box_with_check: Установка Bluetooth
-`apt install bluez`
+```yaml
+apt install bluez
+```
 
 :ballot_box_with_check: Перечень Bluetooth адаптеров
 `hciconfig`
@@ -145,7 +147,9 @@ apt --fix-broken install
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
 :ballot_box_with_check: Connect to your Debian 12 server using an SSH client such as PuTTY or the terminal. Включаем ROOT
-Должно быть без # `PermitRootLogin yes`
+
+Должно быть без # 
+`PermitRootLogin yes`
 ```yaml
 sudo nano /etc/ssh/sshd_config
 ```
