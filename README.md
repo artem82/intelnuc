@@ -144,6 +144,12 @@ apt --fix-broken install
 ```yaml
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 ```
+:ballot_box_with_check: Connect to your Debian 12 server using an SSH client such as PuTTY or the terminal.
+```yaml
+sudo nano /etc/ssh/sshd_config
+```
+PermitRootLogin yes
+
 #### После настройки HA (192.168.1.X:8123)
 :ballot_box_with_check: Hacs
 ```yaml
