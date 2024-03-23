@@ -82,7 +82,8 @@ systemd-journal-remote \
 systemd-resolved -y
 ```
 
-:ballot_box_with_check: Connect to your Debian 12 server using an SSH client such as PuTTY or the terminal. Включаем ROOT
+:ballot_box_with_check: Connect to your Debian 12 server using an SSH client such as PuTTY or the terminal. 
+:ballot_box: Включаем ROOT
 
 Должно быть без # 
 `PermitRootLogin yes`
