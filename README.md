@@ -14,7 +14,7 @@
 
 :white_check_mark: **Удобный SSH клиент** - [Putty](https://www.putty.org/)    
 
-### Home Assistant:    
+### LINUX:    
 /usr/share/hassio/homeassistant
 
 :ballot_box_with_check: Переход в режим root    
@@ -85,7 +85,7 @@ systemd-resolved -y
 ```yaml
 systemctl reboot
 ```
-
+### Home Assistant:  
 
 :ballot_box_with_check: Установка Docker    
 ```yaml
