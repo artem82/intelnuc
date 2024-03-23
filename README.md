@@ -81,10 +81,7 @@ lsb-release \
 systemd-journal-remote \
 systemd-resolved -y
 ```
-:ballot_box_with_check: Перезагрузка
-```yaml
-systemctl reboot
-```
+
 :ballot_box_with_check: Connect to your Debian 12 server using an SSH client such as PuTTY or the terminal. Включаем ROOT
 
 Должно быть без # 
@@ -93,6 +90,10 @@ systemctl reboot
 sudo nano /etc/ssh/sshd_config
 ```
 
+:ballot_box_with_check: Перезагрузка
+```yaml
+systemctl reboot
+```
 ## Home Assistant:  
 
 :ballot_box_with_check: Установка Docker    
