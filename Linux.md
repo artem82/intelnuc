@@ -1,9 +1,5 @@
-### [Beelink GK Mini часть 2 - Autoboot, Debian 11, Supervised Home Assistant](https://youtu.be/RqW5q-0RYio)
 
-<a href="https://www.youtube.com/channel/UCcq9onYHbs6go3kDpfBoqhg?sub_confirmation=1" target="_blank"><img src="https://raw.githubusercontent.com/kvazis/training/master/lessons/img/subscribe.png" alt="Subscribe" style="height: 71px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-### [Beelink GK Mini на Celeron J4125 - обзор, легкая установка Home Assistant OS - пошаговая инструкция](https://youtu.be/i4bp-s20Dm8)
-### [Установка Ubuntu 20.04 LTS и Home Assistant Supervised на мини пк GK3V. Проще, удобнее, красивее](https://www.youtube.com/watch?v=6l8swO5H-9s)
+## LINUX подготовка и красота
 
 
 #### Команды и ссылки из урока:    
@@ -14,8 +10,11 @@
 
 :white_check_mark: **Удобный SSH клиент** - [Putty](https://www.putty.org/)    
 
-## LINUX:    
-/usr/share/hassio/homeassistant
+### Измените приглашение Bash в Linux:    
+Чтобы изменить приглашение bash навсегда, мы можем отредактировать файл ~/.bashrc и изменить значения PS1. Для редактирования этого файла вы можете использовать любой редактор, но в этом руководстве мы используем nano editor, потому что он прост в использовании. Теперь, чтобы открыть файл ~/.bashrc, используйте следующую команду:
+```yaml
+nano ~/.bashrc
+```
 
 :ballot_box_with_check: Переход в режим root    
 ```yaml
