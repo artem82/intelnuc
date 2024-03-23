@@ -14,7 +14,7 @@
 
 :white_check_mark: **Удобный SSH клиент** - [Putty](https://www.putty.org/)    
 
-### LINUX:    
+## LINUX:    
 /usr/share/hassio/homeassistant
 
 :ballot_box_with_check: Переход в режим root    
@@ -85,7 +85,15 @@ systemd-resolved -y
 ```yaml
 systemctl reboot
 ```
-### Home Assistant:  
+:ballot_box_with_check: Connect to your Debian 12 server using an SSH client such as PuTTY or the terminal. Включаем ROOT
+
+Должно быть без # 
+`PermitRootLogin yes`
+```yaml
+sudo nano /etc/ssh/sshd_config
+```
+
+## Home Assistant:  
 
 :ballot_box_with_check: Установка Docker    
 ```yaml
