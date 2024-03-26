@@ -58,3 +58,5 @@ topic # in 0
 remote_username mqtt
 remote_password mqtt
 ```
+:ballot_box_with_check: В настройка брокера обязательно
+`active: true`
