@@ -13,11 +13,11 @@ apt update && sudo apt upgrade -y && sudo apt autoremove -y
 ```yaml
 sudo apt install mosquitto mosquitto-clients
 ```
-:ballot_box_with_check: Mosquitto предоставляет утилиту mosquitto_passwd для создания файла паролей. Эта команда предложит ввести пароль для указанного пользователя и поместит его в файл /etc/mosquitto/passwd
+:ballot_box_with_check: Mosquitto предоставляет утилиту 'mosquitto_passwd' для создания файла паролей. Эта команда предложит ввести пароль для указанного пользователя и поместит его в файл /etc/mosquitto/passwd
 ```yaml
 sudo mosquitto_passwd -c /etc/mosquitto/passwd artem
 ```
-пользователю artem нужно будет ввести пароль
+пользователю 'artem' нужно будет ввести пароль
 
 ### Home Assistant
 Заходим в file editor
