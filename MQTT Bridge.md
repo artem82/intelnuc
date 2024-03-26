@@ -61,6 +61,6 @@ remote_password mqtt
 :ballot_box_with_check: В настройка брокера обязательно
 `active: true`
 
- `out = publish from the broker`
- `in = receive from remote broker`
- `both = publish and receive`
+- `out = publish from the broker`
+- `in = receive from remote broker`
+- `both = publish and receive`
