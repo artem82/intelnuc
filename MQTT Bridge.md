@@ -19,6 +19,18 @@ sudo mosquitto_passwd -c /etc/mosquitto/passwd artem
 ```
 пользователю `artem` нужно будет ввести пароль
 
+:ballot_box_with_check: Откройте конфигурации Mosquitto и добавьте в них информацию о новом файле
+```yaml
+sudo nano /etc/mosquitto/conf.d/default.conf
+```
+:ballot_box_with_check: На экране появится пустой файл `default.conf`. Введите в него:
+```yaml
+allow_anonymous false
+password_file /etc/mosquitto/passwd
+listener 1883
+
+```
+
 ### Home Assistant
 Заходим в file editor
 
