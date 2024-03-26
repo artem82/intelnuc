@@ -62,5 +62,5 @@ remote_password mqtt
 `active: true`
 
 - `out = publish from the broker`
-- `in = receive from remote broker`
+- `in = receive from remote broker` получить от удаленного брокера
 - `both = publish and receive`
