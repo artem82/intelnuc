@@ -5,6 +5,10 @@
 :white_check_mark: **Wirenboard** [ссылка](https://wirenboard.com/wiki/index.php/MQTT#%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0_%D1%81_%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F%D0%BC%D0%B8_MQTT_%D1%81_%D0%B2%D0%BD%D0%B5%D1%88%D0%BD%D0%B5%D0%B3%D0%BE_%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0)  
 :white_check_mark: **Статья 1** - [ссылка](https://www.8host.com/blog/ustanovka-brokera-soobshhenij-mosquitto-v-debian-10/?ysclid=lu8cn6mvyd128775825)  
 
+:ballot_box_with_check: Чтобы установить Mosquitto, введите:
+```yaml
+sudo apt install mosquitto mosquitto-clients
+```
 
 ### Home Assistant
 Заходим в file editor
@@ -12,6 +16,7 @@
 :ballot_box_with_check: Путь к конфигурации - `/share/mosquitto/20bridges.conf`     
 
 :ballot_box_with_check: Конфиг показанный в уроке. Адрес, логин и пароль - ставим свои    
+
 
 ```yaml
 connection bridge-01
