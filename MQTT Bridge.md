@@ -64,3 +64,15 @@ remote_password mqtt
 - `out = publish from the broker`
 - `in = receive from remote broker` получить от удаленного брокера
 - `both = publish and receive`
+
+  ***ПРИМЕР***
+  при такой конфигурации на удаленный сервер приходят все топики с текущего клиента `topic # out 0` OUT - с клиента топики уходят с префиксом `ha_home/`
+```yaml
+connection bridge-home
+address 195.201.xxx.xx:1883
+notifications true
+notification_topic status/HA_Home/bridge_status
+topic # out 0 "" ha_home/
+remote_username artem
+remote_password artem
+```
