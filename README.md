@@ -171,10 +171,11 @@ sudo nano /etc/ssh/sshd_config
 wget -O - https://get.hacs.xyz | bash -
 ```
 
-## ZIGBE2MQTT
-:ballot_box_with_check: Команда показать текущие USB устройства
+## SSL
+:ballot_box_with_check: Файлы должны распологаться в директории SSL выше config home assistant
 ```yaml
-lsusb
+privkey.pem
+fullchain.pem
 ```
 
 ### [ZIGBEE2MQTT инструкция](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt)
