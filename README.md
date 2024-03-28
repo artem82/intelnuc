@@ -177,8 +177,11 @@ wget -O - https://get.hacs.xyz | bash -
 privkey.pem
 fullchain.pem
 ```
-
-
+## supervisor
+:ballot_box_with_check: Если глючит supervisor
+```yaml
+sudo docker restart hassio_supervisor
+```
 
 
 ____
