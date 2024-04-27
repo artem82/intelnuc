@@ -1,7 +1,7 @@
 ## UNIFI
 
-Логин пароль
-ubnt/ubnt
+Логин пароль - `ubnt/ubnt ....`    
+
 :ballot_box_with_check: Команда сбросить текущее UNIFI устройство
 ```yaml
 syswrapper.sh restore-default
