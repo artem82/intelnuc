@@ -1,7 +1,7 @@
 ## UNIFI
-:ballot_box_with_check: Команда показать текущие USB устройства
+:ballot_box_with_check: Команда сбросить текущее UNIFI устройство
 ```yaml
-lsusb
+syswrapper.sh restore-default
 ```
 
 ### [ZIGBEE2MQTT инструкция](https://github.com/zigbee2mqtt/hassio-zigbee2mqtt)
