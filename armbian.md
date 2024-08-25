@@ -57,9 +57,13 @@ sudo apt search apparmor | grep apparmor
 ```yaml
 curl -fsSL get.docker.com | sh
 ```
-:ballot_box_with_check: Добавление пользователя в DOCKER   
+:ballot_box_with_check: Добавление пользователя в DOCKER  
+Чтобы не было ошибки permission denied unix:///var/run/docker.sock необходимо добавить текущего пользователя в группу и назначить права на docker.sock: 
 ```yaml
 sudo usermod -aG docker root
+```
+```yaml
+sudo chmod 666 /var/run/docker.sock
 ```
 #### Home Assistant OS-Agent : 
 :ballot_box_with_check: Установка OS-Agent    
