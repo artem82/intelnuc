@@ -48,7 +48,9 @@ apt --fix-broken install
 ```yaml
 apt-get install jq wget curl udisks2 libglib2.0-bin network-manager dbus -y
 ```
+```yaml
 sudo apt search apparmor | grep apparmor
+```
 
 #### Docker :
 :ballot_box_with_check: Установка Docker    
@@ -65,11 +67,11 @@ sudo usermod -aG docker root
 
 :ballot_box_with_check: Загружаем агента
 ```yaml
-wget https://github.com/home-assistant/os-agent/releases/download/1.5.1/os-agent_1.5.1_linux_aarch64.deb
+wget https://github.com/home-assistant/os-agent/releases/download/1.6.0/os-agent_1.6.0_linux_aarch64.deb
 ```
 (номер меняем на актуальный)  
  
-Установка - `dpkg -i os-agent_1.5.1_linux_aarch64.deb`  
+Установка - `dpkg -i os-agent_1.6.0_linux_aarch64.deb`  
 
 #### Home Assistant Supervised : 
 :ballot_box_with_check: Загружаем Home Assisistant Supervised 
