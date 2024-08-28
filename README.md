@@ -1,8 +1,5 @@
 ## УСТАНОВКА Home Assistant Debian 12:   
 
-____
-
-
  
 
 :white_check_mark: **Оригинальная инструкция** - [Community Home Assistant Forum](https://community.home-assistant.io/t/installing-home-assistant-supervised-on-debian-11/200253#installing-home-assistant-supervised-on-debian-11-1)   
