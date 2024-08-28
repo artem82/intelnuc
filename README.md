@@ -14,6 +14,14 @@
 ```yaml
 su
 ```
+:ballot_box_with_check: Connect to your Debian 12 server using an SSH client such as PuTTY or the terminal.
+:ballot_box: Включаем ROOT
+
+Должно быть без # 
+`PermitRootLogin yes`
+```yaml
+sudo nano /etc/ssh/sshd_config
+```
 
 :ballot_box_with_check: Редактирование источников    
 ```yaml
@@ -74,15 +82,7 @@ lsb-release \
 systemd-journal-remote \
 systemd-resolved -y
 ```
-
-:ballot_box_with_check: Connect to your Debian 12 server using an SSH client such as PuTTY or the terminal.
-:ballot_box: Включаем ROOT
-
-Должно быть без # 
-`PermitRootLogin yes`
-```yaml
-sudo nano /etc/ssh/sshd_config
-```
+После этого шага необходимо перезагрузить систему. Иначе у вас, скорее всего, возникнет ошибка "#Could not resolve host: get.docker.com" 
 
 :ballot_box_with_check: Перезагрузка
 ```yaml
