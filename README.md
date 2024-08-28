@@ -23,6 +23,11 @@ su
 sudo nano /etc/ssh/sshd_config
 ```
 
+:ballot_box_with_check: Иногда необходимо вовсе отключить на Debian любые энергосберегающие функции (сон, гибернация, гибридный сон и т.п.), тогда пригодится следующая команда.
+```yaml
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+```
+
 :ballot_box_with_check: Редактирование источников    
 ```yaml
 nano /etc/apt/sources.list
@@ -145,10 +150,7 @@ apt install bluez
 :ballot_box_with_check: Перечень Bluetooth адаптеров
 `hciconfig`
 
-:ballot_box_with_check: Иногда необходимо вовсе отключить на Debian любые энергосберегающие функции (сон, гибернация, гибридный сон и т.п.), тогда пригодится следующая команда.
-```yaml
-sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
-```
+
 :ballot_box_with_check: Connect to your Debian 12 server using an SSH client such as PuTTY or the terminal. Включаем ROOT
 
 Должно быть без # 
