@@ -4,7 +4,9 @@
 
 :white_check_mark: **Оригинальная инструкция** - [Community Home Assistant Forum](https://community.home-assistant.io/t/installing-home-assistant-supervised-on-debian-11/200253#installing-home-assistant-supervised-on-debian-11-1)   
 :white_check_mark: **Официальный образ DVD Debian 12.9** - [Загрузка образа](https://cdimage.debian.org/debian-cd/12.9.0/amd64/iso-dvd/)
+
 :white_check_mark: **Официальный репозиторий Debian 12.6** - [Загрузка образа](https://cdimage.debian.org/cdimage/unofficial/non-free/firmware/bookworm/12.6.0/) 
+:white_check_mark: ***RUFUS*** - [Загрузка](https://rufus.ie/ru/) 
 
 
 :white_check_mark: **Удобный SSH клиент** - [Putty](https://www.putty.org/)    
