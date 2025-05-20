@@ -112,15 +112,15 @@ curl -fsSL get.docker.com | sh
 
 :ballot_box_with_check: Загружаем агента
 ```yaml
-wget https://github.com/home-assistant/os-agent/releases/download/1.6.0/os-agent_1.6.0_linux_x86_64.deb
+wget https://github.com/home-assistant/os-agent/releases/download/1.7.2/os-agent_1.7.2_linux_x86_64.deb
 ```
 (номер меняем на актуальный)  
-Загружаем - `wget https://github.com/home-assistant/os-agent/releases/download/1.6.0/os-agent_1.6.0_linux_x86_64.deb` (номер меняем на актуальный)    
+Загружаем - `wget https://github.com/home-assistant/os-agent/releases/download/1.7.2/os-agent_1.7.2_linux_x86_64.deb` (номер меняем на актуальный)    
 
-Установка `dpkg -i os-agent_1.6.0_linux_x86_64.deb`
+Установка `dpkg -i os-agent_1.7.2_linux_x86_64.deb`
 sudo - i должно работать
 ```yaml
-dpkg -i os-agent_1.6.0_linux_x86_64.deb
+dpkg -i os-agent_1.7.2_linux_x86_64.deb
 ```
 
 #### Home Assistant Supervised : 
