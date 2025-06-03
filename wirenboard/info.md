@@ -38,6 +38,21 @@ modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyMOD1 -a125 -t0x06 -r128 11
 systemctl restart wb-rules
 ```
 
+### Обновление всех устройств на шине
+
+```yaml
+wb-mcu-fw-updater update-all
+```
+
+### WIRENBOARD CLOUD
+
+```yaml
+apt update
+```
+```yaml
+apt install wb-cloud-agent
+```
+
 ### Home Assistant
 Заходим в file editor
 
