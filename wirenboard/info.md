@@ -14,16 +14,16 @@ systemctl restart wb-mqtt-confed
 
 ### MODBUS ID замена
 
-Остановить службу 
+`Остановить` службу 
 ```yaml
 systemctl stop wb-mqtt-serial 
 ```
-Запустить службу 
+`Запустить` службу 
 ```yaml
 systemctl start wb-mqtt-serial 
 ```
 
-Чтобы назначить новый адрес 12 устройству с адресом 1 и подключенное к порту /dev/ttyRS485-1 выполните команду:
+Чтобы назначить новый адрес `12` устройству с адресом `1` и подключенное к порту `/dev/ttyRS485-1` выполните команду:
 ```yaml
 modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyRS485-1 -a1 -t0x06 -r128 12  
 ```
