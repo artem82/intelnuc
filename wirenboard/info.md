@@ -1,43 +1,33 @@
 ## WIRENBOARD
 
 
-###  Файлы шаблонов хранятся на контроллере в директории
+###  Шаблоны хранятся на контроллере в директории
 
 :white_check_mark: /usr/share/wb-mqtt-serial/templates  — папка с предустановленными шаблонами;
+
 :white_check_mark: /etc/wb-mqtt-serial.conf.d/templates — папка для пользовательских шаблонов, которые имеют приоритет над предустановленными.
 
-:ballot_box_with_check: Обновление списка пакетов и установка обновлений
+:ballot_box_with_check: Если вы добавили свой шаблон или изменили существующий, подождите 20 секунд, а потом перезагрузите страницу конфигуратора в веб-интерфейсе клавишами Ctrl+F5 или перезапустите сервис:
 ```yaml
-apt update && sudo apt upgrade -y && sudo apt autoremove -y
+systemctl restart wb-mqtt-confed
 ```
-:ballot_box_with_check: Чтобы установить Mosquitto, введите:
-```yaml
-sudo apt install mosquitto mosquitto-clients
-```
-:ballot_box_with_check: Mosquitto предоставляет утилиту `mosquitto_passwd` для создания файла паролей. Эта команда предложит ввести пароль для указанного пользователя и поместит его в файл `/etc/mosquitto/passwd`
-```yaml
-sudo mosquitto_passwd -c /etc/mosquitto/passwd artem
-```
-пользователю `artem` нужно будет ввести пароль
+### MODBUS ID замена
 
-:ballot_box_with_check: Откройте конфигурации Mosquitto и добавьте в них информацию о новом файле
+Остановить службу 
 ```yaml
-sudo nano /etc/mosquitto/conf.d/default.conf
+systemctl stop wb-mqtt-serial 
 ```
-:ballot_box_with_check: На экране появится пустой файл `default.conf`. Введите в него:
+Чтобы назначить новый адрес 12 устройству с адресом 1 и подключенное к порту /dev/ttyRS485-1 выполните команду:
 ```yaml
-allow_anonymous false
-password_file /etc/mosquitto/passwd
-listener 1883
-
+modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyRS485-1 -a1 -t0x06 -r128 12  
 ```
-:ballot_box_with_check: Теперь нужно перезапустить Mosquitto и проверить новые настройки:
+128->51
 ```yaml
-sudo systemctl restart mosquitto
+modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyMOD2 -a128 -t0x06 -r128 51  
 ```
-Статус сервера 
+125->11
 ```yaml
-sudo systemctl status mosquitto
+modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyMOD1 -a125 -t0x06 -r128 11  
 ```
 
 ### Home Assistant
