@@ -199,6 +199,22 @@ find / -name "configuration.yaml"
 ```yaml
 cd /var/lib/homeassistant/homeassistant/
 ```
+## Репозитории дополнений
+:ballot_box_with_check: Ссылки
+```yaml
+https://github.com/zigbee2mqtt/hassio-zigbee2mqtt
+```
+```yaml
+https://github.com/blakeblackshear/frigate-hass-addons
+```
+```yaml
+https://github.com/AlexxIT/hassio-addons
+```
+```yaml
+https://github.com/faserf/hassio-addons
+```
+```yaml
+https://github.com/pergolafabio/Hikvision-Addons
 ```
 ____
 #### [Beelink GK Mini часть 2 - Autoboot, Debian 11, Supervised Home Assistant](https://youtu.be/RqW5q-0RYio)
