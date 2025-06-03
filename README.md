@@ -184,7 +184,14 @@ fullchain.pem
 sudo docker restart hassio_supervisor
 ```
 
-
+## supervisor
+:ballot_box_with_check: Если глючит supervisor
+```yaml
+find / -name "configuration.yaml"
+```
+```yaml
+find / -name "configuration.yaml"
+```
 ____
 #### [Beelink GK Mini часть 2 - Autoboot, Debian 11, Supervised Home Assistant](https://youtu.be/RqW5q-0RYio)
 
