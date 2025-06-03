@@ -11,6 +11,7 @@
 ```yaml
 systemctl restart wb-mqtt-confed
 ```
+
 ### MODBUS ID замена
 
 Остановить службу 
@@ -28,6 +29,13 @@ modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyMOD2 -a128 -t0x06 -r128 51
 125->11
 ```yaml
 modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyMOD1 -a125 -t0x06 -r128 11  
+```
+
+### WB RULES
+:ballot_box_with_check: https://wirenboard.com/wiki/Wb-rules
+Файлы с правилами хранятся в контроллере в папке /etc/wb-rules/ с расширением .js
+```yaml
+systemctl restart wb-rules
 ```
 
 ### Home Assistant
