@@ -48,7 +48,8 @@ sudo -i
 ```yaml
 apt update && sudo apt upgrade -y && sudo apt autoremove -y
 ```
-:ballot_box_with_check: Поиск и удаление ненужных файлов в Linux / MacOS
+### Поиск и удаление ненужных файлов в Linux / MacOS
+:ballot_box_with_check: Установка
 ```yaml
 sudo apt install ncdu
 ```
