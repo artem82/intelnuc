@@ -62,3 +62,8 @@ sudo ncdu /
 ```yaml
 sudo fdisk -l
 ```
+```yaml
+sudo mkdir /mnt/ssd
+sudo mount /dev/sdb1 /mnt/ssd
+
+```
