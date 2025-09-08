@@ -64,6 +64,12 @@ sudo fdisk -l
 ```
 ```yaml
 sudo mkdir /mnt/ssd
+```
+```yaml
 sudo mount /dev/sdb1 /mnt/ssd
 
+```
+:ballot_box_with_check: форматирование раздела /dev/sdb1 в файловую систему ext4: 
+```yaml
+sudo mkfs.ext4 /dev/sdb1
 ```
