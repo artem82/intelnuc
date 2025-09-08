@@ -48,6 +48,7 @@ sudo -i
 ```yaml
 apt update && sudo apt upgrade -y && sudo apt autoremove -y
 ```
+
 ### Поиск и удаление ненужных файлов в Linux / MacOS
 :ballot_box_with_check: Установка
 ```yaml
@@ -56,4 +57,8 @@ sudo apt install ncdu
 Сканировать корневой каталог (всю систему):
 ```yaml
 sudo ncdu /
+```
+### Внешний диск в Linux / MacOS
+```yaml
+sudo fdisk -l
 ```
