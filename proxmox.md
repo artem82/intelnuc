@@ -8,7 +8,11 @@
 ```yaml
 https://github.com/community-scripts/ProxmoxVE
 ```
-:ballot_box_with_check:  Ссылка 2
+:ballot_box_with_check:  Proxmox VE Home Assistant OS VM
 ```yaml
-https://community-scripts.github.io/ProxmoxVE/
+https://community-scripts.github.io/ProxmoxVE/scripts?id=haos-vm
+```
+:ballot_box_with_check:  Proxmox VE Home Assistant OS VM скрипт
+```yaml
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/haos-vm.sh)"
 ```
