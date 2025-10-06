@@ -1,12 +1,12 @@
 ## PROXMOX
 
 Логин пароль - `ubnt/ubnt ....`    
-
-:ballot_box_with_check: Команда сбросить текущее UNIFI устройство
+### Proxmox VE Helper-Scripts
+:ballot_box_with_check: Ссылка 1
 ```yaml
-syswrapper.sh restore-default
+https://github.com/community-scripts/ProxmoxVE
 ```
-:ballot_box_with_check: Команда привязать текущее UNIFI устройство к серверу
+:ballot_box_with_check:  Ссылка 2
 ```yaml
-set-inform http://192.168.1.10:8080/inform
+https://community-scripts.github.io/ProxmoxVE/
 ```
