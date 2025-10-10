@@ -1,5 +1,6 @@
 https://www.mostlychris.com/installing-frigate-nvr-on-proxmox-in-an-lxc-container/
 
+### Настройка в докере Frigate
 
 :ballot_box_with_check: Создаем пустые файлы docker-compose.yml
 ```yaml
