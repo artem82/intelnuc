@@ -1,6 +1,16 @@
 https://www.mostlychris.com/installing-frigate-nvr-on-proxmox-in-an-lxc-container/
 
 
+:ballot_box_with_check: Создаем пустые файлы docker-compose.yml
+```yaml
+mkdir storage config && touch docker-compose.yml
+```
+
+:ballot_box_with_check: Запустить docker-compose.yml
+```yaml
+docker compose up -d
+```
+
 :ballot_box_with_check: Файлы настройки docker-compose.yml пример 
 ```yaml
 version: "3.9"
