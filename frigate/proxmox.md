@@ -1,7 +1,7 @@
 https://www.mostlychris.com/installing-frigate-nvr-on-proxmox-in-an-lxc-container/
 
 
-:ballot_box_with_check: Файлы настройки CONFIG.YAML пример 
+:ballot_box_with_check: Файлы настройки docker-compose.yml пример 
 ```yaml
 version: "3.9"
 services:
