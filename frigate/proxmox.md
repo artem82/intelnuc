@@ -2,6 +2,16 @@ https://www.mostlychris.com/installing-frigate-nvr-on-proxmox-in-an-lxc-containe
 
 ### Настройка в докере Frigate
 
+:ballot_box_with_check: INSTALL docker-compose.yml
+```yaml
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+```yaml
+sudo systemctl status docker
+```
+```yaml
+sudo systemctl start docker
+```
 :ballot_box_with_check: Создаем пустые файлы docker-compose.yml
 ```yaml
 mkdir storage config && touch docker-compose.yml
