@@ -17,7 +17,7 @@ https://github.com/community-scripts/ProxmoxVE
 https://community-scripts.github.io/ProxmoxVE/scripts?id=haos-vm
 ```
 
-:ballot_box_with_check:  Proxmox VE Home Assistant OS VM скрипт
+:ballot_box_with_check:  [Proxmox VE Home Assistant OS VM скрипт](https://community-scripts.github.io/ProxmoxVE/scripts?id=haos-vm)
 ```yaml
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/haos-vm.sh)"
 ```
