@@ -1,4 +1,8 @@
 ## PROXMOX
+:ballot_box_with_check:  Proxmox WEB
+```yaml
+https://192.168.1.222:8006/
+```
 
 Логин пароль - `ubnt/ubnt ....`    
 ### Proxmox VE Helper-Scripts
@@ -12,11 +16,12 @@ https://github.com/community-scripts/ProxmoxVE
 ```yaml
 https://community-scripts.github.io/ProxmoxVE/scripts?id=haos-vm
 ```
+
 :ballot_box_with_check:  Proxmox VE Home Assistant OS VM скрипт
 ```yaml
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/haos-vm.sh)"
 ```
-:ballot_box_with_check:  Proxmox WEB
+:ballot_box_with_check:  Proxmox UniFi Network Server 
 ```yaml
-https://192.168.1.222:8006/
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/unifi.sh)"
 ```
