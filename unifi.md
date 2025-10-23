@@ -17,7 +17,7 @@ https://ui.com/download/software/u6-pro
 ```
 :ballot_box_with_check: [UniFi OS - Dream Machine Pro Max 4.3.6](https://ui.com/download/software/udm-pro-max)
 ```yaml
-[UniFi OS - Dream Machine Pro Max 4.3.6](https://fw-download.ubnt.com/data/unifi-dream/4092-UDMPROMAX-4.3.6-04d08e37-0365-4e68-a217-207667f27c39.bin)
+https://fw-download.ubnt.com/data/unifi-dream/4092-UDMPROMAX-4.3.6-04d08e37-0365-4e68-a217-207667f27c39.bin
 ```
 
 ### UniFi Network Application
