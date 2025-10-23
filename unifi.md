@@ -10,4 +10,10 @@ syswrapper.sh restore-default
 ```yaml
 set-inform http://192.168.1.10:8080/inform
 ```
+### Ссылки на прошивки
+:ballot_box_with_check: Команда сбросить текущее UNIFI устройство
+```yaml
+https://ui.com/download/software/u6-pro
+```
+
 
