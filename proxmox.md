@@ -21,7 +21,7 @@ https://community-scripts.github.io/ProxmoxVE/scripts?id=haos-vm
 ```yaml
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/haos-vm.sh)"
 ```
-:ballot_box_with_check:  Proxmox UniFi Network Server 
+:ballot_box_with_check:  [Proxmox UniFi Network Server](https://community-scripts.github.io/ProxmoxVE/scripts?id=unifi) 
 ```yaml
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/unifi.sh)"
 ```
