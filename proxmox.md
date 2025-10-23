@@ -12,11 +12,7 @@ https://192.168.1.222:8006/
 ```yaml
 https://github.com/community-scripts/ProxmoxVE
 ```
-:ballot_box_with_check:  Proxmox VE Home Assistant OS VM
-```yaml
-https://community-scripts.github.io/ProxmoxVE/scripts?id=haos-vm
-```
-
+### Ссылки на скрипты
 :ballot_box_with_check:  [Proxmox VE Home Assistant OS VM скрипт](https://community-scripts.github.io/ProxmoxVE/scripts?id=haos-vm)
 ```yaml
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/vm/haos-vm.sh)"
