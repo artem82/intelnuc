@@ -31,6 +31,7 @@ msw:
         unique_id: wb_motion_11_high
         state: "{{states('sensor.sensor_wb_11_motion_max')|int > 300}}"
         device_class: motion
+        icon: mdi:motion-sensor
         availability: "{{ states('sensor.sensor_wb_11_motion_max') }}"
         
   # Детская 2  -12
@@ -45,9 +46,6 @@ msw:
         unique_id: wb_motion_12_high
         state: "{{states('sensor.sensor_wb_12_motion_max')|int > 300}}"
         device_class: motion
+        icon: mdi:motion-sensor
         availability: "{{ states('sensor.sensor_wb_12_motion_max') }}"
-
 ```
-        state: "{{states('sensor.sensor_wb_12_motion_max')|int > 300}}"
-        device_class: motion
-        availability: "{{ states('sensor.sensor_wb_12_motion_max') }}"
