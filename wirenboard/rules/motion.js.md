@@ -1,4 +1,4 @@
-
+На основе WB делаем датчики движения которые работают определенно время, все настраивается
 ```javascript
  function makeMotionDetector(name, timeout_s, detector_control, name_mqtt) {
   var motion_timer_id = null;
