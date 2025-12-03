@@ -1,4 +1,33 @@
+пример 1
+```javascript
 
+defineRule( "light_change_rgbw_w", {
+  whenChanged: "wb-gpio/EXT2_IN5",
+  then: function (newValue, devName, cellName){
+
+    if ( newValue == 1) { //если кнопка нажата
+    dev["wb-led_231/RGB Strip"] = false; 
+    dev["wb-led_231/Channel 4"] = !dev["wb-led_231/Channel 4"]; 
+    } 
+         // dev["wb-led_103/Channel 4"] = false   
+  }
+});
+
+defineRule( "light_change_rgbw_rgb", {
+  whenChanged: "wb-gpio/EXT2_IN4",
+  then: function (newValue, devName, cellName){
+
+    if ( newValue == 1) { //если кнопка нажата
+    dev["wb-led_231/Channel 4"] = false; 
+    dev["wb-led_231/RGB Strip"] = true;    
+
+      
+    } 
+  
+  }
+});
+```
+пример 2
 ```javascript
 var dimmNumber = "93" //name VIRTUAL device (this) #ChangeMe!#
 var devDimmer = "wb-mrgbw-d-fw3_93" // For name REAL MRGBW-D device #ChangeMe!#
