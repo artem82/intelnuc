@@ -58,39 +58,3 @@ apt update
 apt install wb-cloud-agent
 ```
 
-### Home Assistant
-Заходим в file editor
-
-:ballot_box_with_check: Путь к конфигурации - `/share/mosquitto/20bridges.conf`     
-
-:ballot_box_with_check: Конфиг показанный в уроке. Адрес, логин и пароль - ставим свои    
-
-
-```yaml
-connection bridge-01
-address 192.168.1.55:1883
-notifications true
-notification_topic status/HA_Home/bridge_status
-topic # out 0
-topic # in 0
-remote_username mqtt
-remote_password mqtt
-```
-:ballot_box_with_check: В настройка брокера обязательно
-`active: true`
-
-- `out = publish from the broker`
-- `in = receive from remote broker` получить от удаленного брокера
-- `both = publish and receive`
-
-  ***ПРИМЕР***
-  при такой конфигурации на удаленный сервер приходят все топики с текущего клиента `topic # out 0` OUT - с клиента топики уходят с префиксом `ha_home/`
-```yaml
-connection bridge-home
-address 195.201.xxx.xx:1883
-notifications true
-notification_topic status/HA_Home/bridge_status
-topic # out 0 "" ha_home/
-remote_username artem
-remote_password artem
-```
