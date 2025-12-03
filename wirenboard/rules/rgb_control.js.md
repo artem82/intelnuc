@@ -26,3 +26,16 @@ defineRule( "RGB_change", {
   }
 });
 ```
+```javascript
+trackMqtt("/devices/daikin-lon_5/controls/1_ON_OFF_VIRTUAL", function(message){
+  log.info("name 1: {}, value: {}".format(message.topic, message.value))
+
+  if(message.value === "0"){
+    publish("/devices/daikin-lon_5/controls/1_ON_OFF_WRITE/on", "0"); 
+  }
+  else if(message.value === "100"){
+  	publish("/devices/daikin-lon_5/controls/1_ON_OFF_WRITE/on", "100"); 
+  }
+
+});
+```
