@@ -1,5 +1,5 @@
 
-
+пример 1
 ```javascript
 defineRule({  
   whenChanged: "wb-mr3_127/K1",
@@ -16,6 +16,20 @@ defineRule({
     
 });
 ```
+пример 2
+```javascript
+defineRule( "light_change_10_1", {
+  whenChanged: "wb-gpio/EXT3_DR14",
+  then: function (newValue, devName, cellName){
+
+    if ( newValue == 1) { //если кнопка нажата
+    dev["wb-mr6c_63/K5"] = !dev["wb-mr6c_63/K5"];
+    } 
+    
+  }
+});
+```
+пример 3
 ```javascript
 defineRule({
   whenChanged: "wb-mcm8_51/Input 4 Single Press Counter",
