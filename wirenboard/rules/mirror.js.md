@@ -1,6 +1,6 @@
 
 ### // Так как зеркала имеют свою кнопку нужно держать их включенными
-```yaml
+```javascript
 defineRule({
   whenChanged: "wb-mr6c_132/K4",
   then: function (newValue, devName, cellName) {
@@ -18,7 +18,7 @@ defineRule({
   }
 });
 ```
-```yaml
+```javascript
 defineRule({
   whenChanged: "wb-mr6c_132/K6",
   then: function (newValue, devName, cellName) {
@@ -32,6 +32,19 @@ defineRule({
         dev["wb-mr6c_132/K6"] = true;  // су зеркало
       }, 1000);
     }    
+    
+  }
+});
+```
+```javascript
+### // нужен только импульс, поэтому выключатель возвращаем на место
+defineRule({
+  whenChanged: "wb-mr6c_129/K4",
+  then: function (newValue, devName, cellName) {
+
+    setTimeout(function () {
+      dev["wb-mr6c_129/K4"] = false;  // ворота гаражные
+    }, 900);
     
   }
 });
