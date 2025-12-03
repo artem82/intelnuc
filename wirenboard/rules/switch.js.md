@@ -34,7 +34,6 @@ defineRule({
     dev["wb-mr6c_132/K3"] = false;  // су
     dev["wb-mr6c_132/K4"] = false;  // су зеркало
     dev["wb-mr6c_77/K2"] = false;   // су 24 вольт Подсветка
-```
 
     setTimeout(function () {
       dev["wb-mr6c_132/K4"] = true;  // су зеркало
@@ -42,3 +41,4 @@ defineRule({
     
   }
 });
+```
