@@ -1,3 +1,4 @@
+```yaml
 
 'switch_turnoffall':
   alias: Выключить ВЫКЛЮЧАТЕЛИ во всей квартире
@@ -19,3 +20,5 @@
       entity_id: all
   mode: single
   icon: mdi:lightbulb-group-off-outline
+
+```
