@@ -26,6 +26,17 @@ light:
     payload_on: "1"
     payload_off: "0"
     retain: true
+################ 106 ########################
+
+# прачечная/посчтирочная
+  - name: "wb-mr6cv3_106_k1"
+    unique_id: wb-mr6cv3_106_k1
+    state_topic: "/devices/wb-mr6cv3_106/controls/K1"
+    command_topic: "/devices/wb-mr6cv3_106/controls/K1/on"
+    icon: mdi:light-recessed
+    payload_on: "1"
+    payload_off: "0"
+    retain: true
 
 ########################################
 ###          LIGHT LED W4 DIM        ###
