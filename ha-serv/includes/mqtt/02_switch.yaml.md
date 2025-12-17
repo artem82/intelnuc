@@ -1,3 +1,4 @@
+```yaml
 
 switch:
 ################ 102 ######################## 
@@ -51,8 +52,8 @@ switch:
     payload_on: "1"
     payload_off: "0"
     retain: true 
-    
-    
+
+```
     
     
     
