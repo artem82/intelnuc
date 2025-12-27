@@ -1,3 +1,4 @@
+```yaml
 ##################################
 ####    YANDEX SMART HOME     ####
 ##################################
@@ -133,7 +134,9 @@
     sensor.temp_hum_bedroom_lcd_humidity:
       name: Влажность
       room: Спальня
-      type: devices.types.sensor      
+      type: devices.types.sensor
+
+```  
       
       
       
