@@ -23,6 +23,9 @@ cd /var/lib/homeassistant/homeassistant/
 ## Репозитории дополнений
 :ballot_box_with_check: Ссылки
 ```yaml
+https://github.com/hacs/addons
+```
+```yaml
 https://github.com/zigbee2mqtt/hassio-zigbee2mqtt
 ```
 ```yaml
