@@ -21,3 +21,11 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/Proxmo
 ```yaml
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/unifi.sh)"
 ```
+### Типичная структура Proxmox:
+/var/lib/vz/              # Основная директория для хранения VM/CT
+├── dump/                 # Дампы памяти
+├── images/               # Диски виртуальных машин
+│   ├── <VMID>/          # По VM ID
+│   └── <CTID>/          # По CT ID
+├── template/             # Шаблоны
+└── snippets/             # Фрагменты cloud-init
