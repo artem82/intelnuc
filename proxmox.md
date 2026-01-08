@@ -22,6 +22,7 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/Proxmo
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/unifi.sh)"
 ```
 ### Типичная структура Proxmox:
+```yaml
 /var/lib/vz/              # Основная директория для хранения VM/CT
 ├── dump/                 # Дампы памяти
 ├── images/               # Диски виртуальных машин
@@ -29,3 +30,18 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/community-scripts/Proxmo
 │   └── <CTID>/          # По CT ID
 ├── template/             # Шаблоны
 └── snippets/             # Фрагменты cloud-init
+```
+
+
+### Распределение по умолчанию:
+```yaml
+root раздел - система Proxmox (обычно 20-30GB)
+
+LVM-Thin или ZFS - основное хранилище для виртуальных машин
+
+Дисковые образы хранятся в:
+
+Локальное хранилище: /var/lib/vz/images/
+
+Хранилища NFS/iSCSI/etc: в соответствующих точках монтирования
+```
