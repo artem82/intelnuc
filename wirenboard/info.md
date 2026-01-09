@@ -31,6 +31,10 @@ modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyRS485-1 -a1 -t0x06 -r128 1
 ```yaml
 modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyMOD2 -a128 -t0x06 -r128 51  
 ```
+12->55
+```yaml
+modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyRS485-2 -a12 -t0x06 -r128 55  
+```
 125->11
 ```yaml
 modbus_client --debug -mrtu -b9600 -pnone -s2 /dev/ttyMOD1 -a125 -t0x06 -r128 11  
