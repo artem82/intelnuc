@@ -48,6 +48,10 @@ systemctl restart wb-rules
 ```yaml
 wb-mcu-fw-updater update-all
 ```
+### Определение адреса методом перебора
+```yaml
+for i in {1..247}; do echo -n "$i - "; D=`modbus_client -mrtu /dev/ttyRS485-1 --debug -b9600 -pnone -s2 -a$i -t3 -o100 -r200 -c6 2>/dev/null | grep Data: | awk 'gsub("Data:","")' | sed -e 's/0x00/\\\x/g' -e 's/\s//g'`; echo -e $D; done
+```
 
 ### WIRENBOARD CLOUD
 
