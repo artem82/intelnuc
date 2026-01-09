@@ -61,4 +61,8 @@ apt update
 ```yaml
 apt install wb-cloud-agent
 ```
+### WIRENBOARD ПРОШИВКА
 
+```yaml
+https://fw-releases.wirenboard.com/?prefix=fit_image/stable/8x/
+```
