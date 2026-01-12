@@ -53,6 +53,51 @@ switch:
     payload_off: "0"
     retain: true 
 
+
+
+######################################
+###          SWITCH RADIATOR       ###
+######################################
+
+# РАДИАТОРЫ 1-6, 7-13 - ТЕПЛЫЕ ПОЛЫ 
+
+  - name: "wb_radiator_183_k1"
+    unique_id: wb_radiator_183_k1
+    state_topic: "/devices/wb-mio-gpio_183:1/controls/K1"
+    command_topic: "/devices/wb-mio-gpio_183:1/controls/K1/on"
+    icon: mdi:radiator
+    payload_on: "0"
+    payload_off: "1"
+    retain: true
+
+  - name: "wb_radiator_183_k2"
+    unique_id: wb_radiator_183_k2
+    state_topic: "/devices/wb-mio-gpio_183:1/controls/K2"
+    command_topic: "/devices/wb-mio-gpio_183:1/controls/K2/on"
+    icon: mdi:radiator
+    payload_on: "0"
+    payload_off: "1"
+    retain: true
+
+  - name: "wb_radiator_183_k3"
+    unique_id: wb_radiator_183_k3
+    state_topic: "/devices/wb-mio-gpio_183:1/controls/K3"
+    command_topic: "/devices/wb-mio-gpio_183:1/controls/K3/on"
+    icon: mdi:radiator
+    payload_on: "0"
+    payload_off: "1"
+    retain: true
+    
+# wb_radiator_183_k4 - Детская гостевая    
+  - name: "wb_radiator_183_k4"
+    unique_id: wb_radiator_183_k4
+    state_topic: "/devices/wb-mio-gpio_183:1/controls/K4"
+    command_topic: "/devices/wb-mio-gpio_183:1/controls/K4/on"
+    icon: mdi:radiator
+    payload_on: "0"
+    payload_off: "1"
+    retain: true
+
 ```
     
     
