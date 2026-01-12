@@ -1,4 +1,4 @@
-
+```yaml
 # СОЗДАЕМ РАДИАТОРЫ 
 
 
@@ -250,19 +250,7 @@
 #  sleep_temp: 22 
 #  comfort_temp: 23 
 
-## generic_thermostat ТП СУ Детская Гостевая
-#- platform: generic_thermostat 
-#  name: generic_radiator_tp_13_gost
-#  unique_id: generic_radiator_tp_13_gost
-#  heater: switch.wb_radiator_183_k8
-#  target_sensor: sensor.sensor_wb_12_temp  #Гостевая
-#  target_temp_step: 1 
-#  min_temp: 19 
-#  cold_tolerance: 0.2 
-#  hot_tolerance: 0.3 
-#  target_temp: 25 
-#  sleep_temp: 22 
-#  comfort_temp: 23   
+```
   
   
   
