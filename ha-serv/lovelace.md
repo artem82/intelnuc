@@ -15,3 +15,27 @@ cards:
           state: "on"
       exclude: []
 ```
+### MCM8
+```yaml
+type: grid
+cards:
+  - type: heading
+    heading: MCM8
+    heading_style: title
+  - type: custom:auto-entities
+    card:
+      type: entities
+    filter:
+      include:
+        - options: {}
+          entity_id: binary_sensor.wb_mcm8_51*
+      exclude: []
+  - type: custom:auto-entities
+    card:
+      type: entities
+    filter:
+      include:
+        - options: {}
+          entity_id: binary_sensor.wb_mcm8_6*
+      exclude: []
+```
