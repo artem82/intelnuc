@@ -1,3 +1,4 @@
+```yaml
 # Cбор данных с контроллера посредством wb-map3e
 
 wb_map3e:
@@ -91,3 +92,4 @@ wb_map3e:
         state_class: total
         state_topic: "WB8IP21/devices/wb-map3e_21/controls/Total AP energy"
         unit_of_measurement: 'kWh' 
+```
