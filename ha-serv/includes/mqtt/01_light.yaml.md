@@ -29,11 +29,20 @@ light:
 ################ 106 ########################
 
 # прачечная/посчтирочная
-  - name: "wb-mr6cv3_106_k1"
-    unique_id: wb-mr6cv3_106_k1
+  - name: "wb_mr6cv3_106_k1"
+    unique_id: wb_mr6cv3_106_k1
     state_topic: "/devices/wb-mr6cv3_106/controls/K1"
     command_topic: "/devices/wb-mr6cv3_106/controls/K1/on"
     icon: mdi:light-recessed
+    payload_on: "1"
+    payload_off: "0"
+    retain: true
+
+  - name: "wb_mr6c_111_k1"
+    unique_id: wb_mr6c_111_k1
+    state_topic: "/devices/wb-mr6c_111/controls/K1"
+    command_topic: "/devices/wb-mr6c_111/controls/K1/on"
+    icon: mdi:lightbulb-outline
     payload_on: "1"
     payload_off: "0"
     retain: true
