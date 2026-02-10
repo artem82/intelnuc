@@ -59,7 +59,15 @@ switch:
     payload_off: "0"
     retain: true 
 
-
+# 
+  - name: "wb_mr6c_116_k1"
+    unique_id: wb_mr6c_116_k1
+    state_topic: "WB8IP21/devices/wb-mr6cu_116/controls/K1"
+    command_topic: "WB8IP21/devices/wb-mr6cu_116/controls/K1/on"
+    icon: mdi:toggle-switch
+    payload_on: "1"
+    payload_off: "0"
+    retain: true
 
 ######################################
 ###          SWITCH RADIATOR       ###
