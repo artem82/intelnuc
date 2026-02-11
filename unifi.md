@@ -23,6 +23,11 @@ https://ui.com/download/software/u7-pro
 ```yaml
 https://fw-download.ubnt.com/data/unifi-dream/4092-UDMPROMAX-4.3.6-04d08e37-0365-4e68-a217-207667f27c39.bin
 ```
+:ballot_box_with_check: U7 pro обновление прошивки
+```yaml
+upgrade https://dl.ui.com/unifi/firmware/U7PRO/8.4.6.18068/BZ.ipq53xx_8.4.6+18068.260111.0707.bin
+```
+
 
 ### UniFi Network Application
 [UniFi Network Application 9.5.21 for UniFi OS](https://dl.ui.com/unifi/9.5.21/unifi-uos_sysvinit.deb)
