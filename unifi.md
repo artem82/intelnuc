@@ -15,6 +15,10 @@ set-inform http://192.168.1.10:8080/inform
 ```yaml
 https://ui.com/download/software/u6-pro
 ```
+:ballot_box_with_check: U7 pro
+```yaml
+https://ui.com/download/software/u7-pro
+```
 :ballot_box_with_check: [UniFi OS - Dream Machine Pro Max 4.3.6](https://ui.com/download/software/udm-pro-max)
 ```yaml
 https://fw-download.ubnt.com/data/unifi-dream/4092-UDMPROMAX-4.3.6-04d08e37-0365-4e68-a217-207667f27c39.bin
