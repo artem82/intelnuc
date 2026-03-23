@@ -30,6 +30,7 @@ wbmswv:
          state_topic: "/devices/wb-msw-v3_11/controls/Temperature"
          unit_of_measurement: "°C"
          device_class: temperature
+         value_template: "{{ value | round(1) }}"
        - name: "sensor_wb_11_humidity"
          state_topic: "/devices/wb-msw-v3_11/controls/Humidity"
          value_template: "{{ value | round(0) }}"
