@@ -1,9 +1,12 @@
 ## Frigate
 
-:ballot_box_with_check: Файлы ЗАПИСИ на диске
+:ballot_box_with_check:  Посмотреть, сколько места занимают записи по дням
 ```yaml
-/usr/share/hassio/media
-```
+# Размер записей по датам
+du -sh /media/frigate/recordings/* | sort -hr | head -20
+
+# Или посмотреть общий размер
+du -sh /media/frigate/recordings/
 :ballot_box_with_check: Файлы настройки CONFIG.YAML
 ```yaml
 /usr/share/hassio/addon_configs/*frigate-fa/
