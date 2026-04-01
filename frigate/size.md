@@ -1,11 +1,12 @@
 ## Frigate
 
 :ballot_box_with_check:  Посмотреть, сколько места занимают записи по дням
-```yaml
 # Размер записей по датам
+```yaml
 du -sh /media/frigate/recordings/* | sort -hr | head -20
-
+```
 # Или посмотреть общий размер
+```yaml
 du -sh /media/frigate/recordings/
 
 ```
