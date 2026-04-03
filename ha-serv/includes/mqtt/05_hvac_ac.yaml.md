@@ -1,4 +1,4 @@
-
+```yaml
 climate:
   - name: airac_mqtt_onokom_91
     unique_id: airac_mqtt_onokom_91
@@ -37,4 +37,4 @@ climate:
       {% set values = { 'auto':'0', 'low':'1', 'medium':'2', 'high':'3'} %}
       {{ values[value]}}
     retain: true
-
+```
