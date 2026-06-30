@@ -13,3 +13,45 @@ live:                                    # глобальные настройк
   preload: true                          # грузить поток заранее, до того как карточка попадёт в зону видимости
   zoomable: false                        # запрещает зум/пан жестами на видео
 ```
+:ballot_box_with_check: Файлы настройки Advanced Camera Card
+```yaml
+type: custom:advanced-camera-card
+cameras:
+  - id: hik_i11
+    title: Камера 101 (Hikvision)
+    live_provider: go2rtc
+    go2rtc:
+      stream: hik_i11_main
+    frigate:
+      camera_name: hik_i11_frigate
+view:
+  default: live
+  triggers:
+    actions:
+      interaction_mode: all
+menu:
+  buttons:
+    snapshots:
+      enabled: false
+    timeline:
+      enabled: false
+live:
+  controls:
+    thumbnails:
+      mode: below
+      size: 100
+      media_type: events
+      events_media_type: clips
+      show_details: true
+      show_favorite_control: true
+      show_download_control: true
+      show_timeline_control: false
+media_viewer:
+  controls:
+    thumbnails:
+      mode: below
+      size: 100
+      show_details: true
+      show_timeline_control: false
+
+```
