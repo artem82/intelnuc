@@ -30,6 +30,8 @@ upgrade https://dl.ui.com/unifi/firmware/U7PRO/8.4.6.18068/BZ.ipq53xx_8.4.6+1806
 :ballot_box_with_check: U6/U7 pro обновление прошивки локально
 ```yaml
 http://kedriza.ru/U7PRO8611.bin
+```
+```yaml
 http://kedriza.ru/U6PRO682.bin
 ```
 :ballot_box_with_check: Команда скачать прямо на AP через SSH
