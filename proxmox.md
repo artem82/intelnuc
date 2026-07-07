@@ -53,7 +53,7 @@ lsblk -f
 ```yaml
 lsblk -o NAME,SIZE,TYPE,MOUNTPOINT,FSTYPE
 ```
-### Правильный способ (через Shell в Proxmox):
+### Правильный способ (через Shell в Proxmox): поменять на DHCP
 ```yaml
 nano /etc/network/interfaces
 ```
