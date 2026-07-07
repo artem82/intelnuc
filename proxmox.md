@@ -53,3 +53,14 @@ lsblk -f
 ```yaml
 lsblk -o NAME,SIZE,TYPE,MOUNTPOINT,FSTYPE
 ```
+### Правильный способ (через Shell в Proxmox):
+```yaml
+nano /etc/network/interfaces
+```
+```yaml
+auto vmbr0
+iface vmbr0 inet dhcp
+    bridge-ports nic1
+    bridge-stp off
+    bridge-fd 0
+```
