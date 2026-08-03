@@ -64,3 +64,12 @@ iface vmbr0 inet dhcp
     bridge-stp off
     bridge-fd 0
 ```
+### Порты
+#### Frigate
+http://192.168.1.X:5000
+#### Unifi
+http://192.168.1.X:11443
+#### Proxmoxx
+http://192.168.1.X:8006
+
+
