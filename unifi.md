@@ -35,6 +35,10 @@ http://kedriza.ru/U7PRO8611.bin
 ```yaml
 http://kedriza.ru/U6PRO682.bin
 ```
+:ballot_box_with_check: U6+ обновление прошивки локально https://ui.com/download/software/u6-plus
+```yaml
+http://kedriza.ru/U6PLUS6754.bin
+```
 :ballot_box_with_check: U7 outdoor обновление прошивки локально https://www.ui.com/download/software/u7-outdoor
 ```yaml
 http://kedriza.ru/U7OUTDOOR.bin
