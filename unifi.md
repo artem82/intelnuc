@@ -27,11 +27,11 @@ https://fw-download.ubnt.com/data/unifi-dream/4092-UDMPROMAX-4.3.6-04d08e37-0365
 ```yaml
 upgrade https://dl.ui.com/unifi/firmware/U7PRO/8.4.6.18068/BZ.ipq53xx_8.4.6+18068.260111.0707.bin
 ```
-:ballot_box_with_check: U6/U7 pro обновление прошивки локально
+:ballot_box_with_check: U7 pro обновление прошивки локально https://ui.com/download/software/u7-pro
 ```yaml
 http://kedriza.ru/U7PRO8611.bin
 ```
-:ballot_box_with_check: U6 pro обновление прошивки локально
+:ballot_box_with_check: U6 pro обновление прошивки локально https://ui.com/download/software/u6-pro
 ```yaml
 http://kedriza.ru/U6PRO682.bin
 ```
