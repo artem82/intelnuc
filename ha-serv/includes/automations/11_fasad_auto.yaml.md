@@ -1,4 +1,4 @@
-
+```yaml
 # АВТОМАТИЗАЦИИ 
 # ВКЛЮЧЕНИЕ ФАСАДА
 # https://apps.timwhitlock.info/emoji/tables/unicode
@@ -97,5 +97,5 @@
       target:
         entity_id: group.light_architect
           
-          
+ ```         
           
