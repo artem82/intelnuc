@@ -36,6 +36,9 @@ http://kedriza.ru/U7OUTDOOR.bin
 ```yaml
 http://kedriza.ru/US24poe_741_gen1.bin
 ```
+```yaml
+http://kedriza.ru/US_FLEX_MINI_2.1.6.bin
+```
 :ballot_box_with_check: Команда скачать прямо на AP через SSH
 ```yaml
 curl -o /tmp/fwupdate.bin http://kedriza.ru/U7PRO8611.bin
