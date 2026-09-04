@@ -28,7 +28,7 @@ http://kedriza.ru/U6PRO682.bin
 ```yaml
 http://kedriza.ru/U6PLUS6754.bin
 ```
-:ballot_box_with_check: U7 outdoor обновление прошивки локально https://www.ui.com/download/software/u7-outdoor
+:ballot_box_with_check: U7-Lite/In-Wall/Outdoor обновление прошивки локально https://www.ui.com/download/software/u7-outdoor
 ```yaml
 http://kedriza.ru/U7OUTDOOR.bin
 ```
