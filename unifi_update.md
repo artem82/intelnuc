@@ -32,6 +32,10 @@ http://kedriza.ru/U6PLUS6754.bin
 ```yaml
 http://kedriza.ru/U7OUTDOOR.bin
 ```
+:ballot_box_with_check: 24POE switch обновление прошивки локально https://ui.com/download/software/us-24-250w
+```yaml
+http://kedriza.ru/US24poe_741_gen1.bin
+```
 :ballot_box_with_check: Команда скачать прямо на AP через SSH
 ```yaml
 curl -o /tmp/fwupdate.bin http://kedriza.ru/U7PRO8611.bin
