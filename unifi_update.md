@@ -39,6 +39,12 @@ http://kedriza.ru/US24poe_741_gen1.bin
 ```yaml
 http://kedriza.ru/US_FLEX_MINI_2.1.6.bin
 ```
+:ballot_box_with_check: USW-16/24/48-POE | USW-24/48 | USW-Lite-8/16-POE  обновление прошивки локально https://ui.com/download/software/usw-16-poe
+```yaml
+http://kedriza.ru/USW_16_POE_7510.bin
+```
+
+
 :ballot_box_with_check: Команда скачать прямо на AP через SSH
 ```yaml
 curl -o /tmp/fwupdate.bin http://kedriza.ru/U7PRO8611.bin
