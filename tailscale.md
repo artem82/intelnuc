@@ -105,3 +105,64 @@ tailscale ip -4
 ## Итог
 
 Wiren Board подключён к приватной tailnet через self-hosted headscale — без зависимости от облака Tailscale и без блокировки DPI по SNI.
+
+## Справочник команд Headscale
+
+**Создание пользователя**
+```bash
+headscale users create <имя_пользователя>
+```
+
+**Список пользователей**
+```bash
+headscale users list
+```
+
+**Список устройств**
+```bash
+headscale nodes list
+```
+
+**Список маршрутов**
+```bash
+headscale nodes routes list
+```
+
+**Создание ключа предварительной авторизации**
+```bash
+headscale preauthkeys create --user <ID_пользователя>
+```
+
+**Переименование устройства**
+```bash
+headscale node rename -i <id_устройства> <новое_имя>
+```
+
+**Подтверждение Exit-Node**
+```bash
+headscale nodes approve-routes --identifier <id_устройства> --routes 0.0.0.0/0
+```
+
+**Подтверждение Network Routes**
+```bash
+headscale nodes approve-routes --identifier <id_устройства> --routes <ip_подсети>/24
+```
+
+**Подтверждение Exit-Node + Network Routes**
+```bash
+headscale nodes approve-routes --identifier <id_устройства> --routes 0.0.0.0/0,<ip_сети>/24
+```
+
+**Удаление устройства**
+```bash
+headscale nodes delete --identifier <id_устройства>
+```
+
+**Удаление пользователя**
+```bash
+headscale users destroy <имя_пользователя>
+```
+
+**Создание API-ключа**
+```bash
+headscale apikeys create --expiration
