@@ -2,34 +2,21 @@
 
 ## Проблема
 
-Прямое подключение к `tailscale.com` с Wiren Board не работает — провайдер режет TLS-соединение по SNI (DPI-блокировка). Решение: скачать бинарники на другом сервере с открытым интернетом, перенести на WB вручную, подключить к собственному headscale-серверу.
+Прямое подключение к `tailscale.com` с Wiren Board не работает — провайдер режет TLS-соединение по SNI (DPI-блокировка). Решение: бинарник Tailscale лежит на собственном сервере (`files.artemvpn.ru`), скачивается на WB напрямую по своему домену, подключение идёт к собственному headscale-серверу.
 
 **Требуется:**
-- Работающий headscale-сервер (в примере — `hscale.artemvpn.ru`)
-- Любой Linux-сервер с открытым интернетом для скачивания бинарников
-- SFTP/SCP доступ для переноса файла на WB
+- headscale-сервер: `hscale.artemvpn.ru`
+- файл-хостинг: `files.artemvpn.ru` (уже настроен, файл `tailscale_arm64.tgz` загружен)
 
 ---
 
-## 1. Скачать бинарник на сервере с рабочим интернетом
-
-Проверить актуальную версию и архитектуру на https://pkgs.tailscale.com/stable/#static (для Wiren Board — `arm64`).
+## 1. На Wiren Board — скачать бинарник со своего сервера
 
 ```bash
-curl -fsSL https://pkgs.tailscale.com/stable/tailscale_1.102.3_arm64.tgz -o /root/tailscale_arm64.tgz
+curl -fsSL https://files.artemvpn.ru/tailscale_arm64.tgz -o /root/tailscale_arm64.tgz
 ```
 
-## 2. Перенести файл на Wiren Board
-
-Через SFTP/SCP скопировать `tailscale_arm64.tgz` в `/root/` на WB.
-
-Вариант через `scp` напрямую (если есть доступ между серверами):
-
-```bash
-scp root@<сервер-с-файлом>:/root/tailscale_arm64.tgz /root/
-```
-
-## 3. На Wiren Board — распаковать архив
+## 2. Распаковать архив
 
 ```bash
 cd /root
@@ -37,7 +24,7 @@ tar xzf tailscale_arm64.tgz
 cd tailscale_*_arm64
 ```
 
-## 4. Установить бинарники
+## 3. Установить бинарники
 
 > **Важно:** systemd-юнит ищет исполняемые файлы в `/usr/sbin/`, а не `/usr/bin/`.
 
@@ -45,7 +32,7 @@ cd tailscale_*_arm64
 cp tailscale tailscaled /usr/sbin/
 ```
 
-## 5. Установить и запустить systemd-сервис
+## 4. Установить и запустить systemd-сервис
 
 ```bash
 cp systemd/tailscaled.service /etc/systemd/system/
@@ -63,7 +50,7 @@ systemctl status tailscaled
 
 Ожидаемый результат: `Active: active (running)`.
 
-## 6. Подключить к своему headscale-серверу
+## 5. Подключить к своему headscale-серверу
 
 ```bash
 tailscale up --login-server=https://hscale.artemvpn.ru
@@ -75,16 +62,18 @@ tailscale up --login-server=https://hscale.artemvpn.ru
 hskey-authreq-XXXXXXXXXXXXXXXXXXXX
 ```
 
-## 7. Зарегистрировать ноду на сервере headscale
+## 6. Зарегистрировать ноду на сервере headscale
 
-Выполнить на сервере, где работает headscale:
+Выполнить на сервере, где работает headscale (`msk-1-vm-o7su`):
 
 ```bash
-# создать пользователя (если ещё не создан)
-headscale users create wirenboard
-
-# зарегистрировать ноду, подставив свой auth-id
 headscale auth register --auth-id hskey-authreq-XXXXXXXXXXXXXXXXXXXX --user wirenboard
+```
+
+Если пользователь ещё не создан:
+
+```bash
+headscale users create wirenboard
 ```
 
 Ожидаемый результат:
@@ -93,7 +82,7 @@ headscale auth register --auth-id hskey-authreq-XXXXXXXXXXXXXXXXXXXX --user wire
 Node <hostname> registered
 ```
 
-## 8. Проверка подключения на Wiren Board
+## 7. Проверка подключения на Wiren Board
 
 ```bash
 tailscale status
@@ -104,7 +93,9 @@ tailscale ip -4
 
 ## Итог
 
-Wiren Board подключён к приватной tailnet через self-hosted headscale — без зависимости от облака Tailscale и без блокировки DPI по SNI.
+Wiren Board подключён к приватной tailnet через self-hosted headscale, без зависимости от облака Tailscale и без блокировки DPI по SNI. Для установки на новых платах достаточно шагов 1-7 — бинарник уже лежит на `files.artemvpn.ru`, повторно скачивать и переносить его вручную через SFTP не нужно.
+
+---
 
 ## Справочник команд Headscale
 
@@ -165,4 +156,74 @@ headscale users destroy <имя_пользователя>
 
 **Создание API-ключа**
 ```bash
-headscale apikeys create --expiration
+headscale apikeys create --expiration 90d
+```
+
+**Список API-ключей**
+```bash
+headscale apikeys list
+```
+
+---
+
+## Справочник команд Tailscale (клиент)
+
+**Подключение к серверу**
+```bash
+tailscale up --login-server=https://hscale.artemvpn.ru
+```
+
+**Статус подключения**
+```bash
+tailscale status
+```
+
+**Свой IP в tailnet**
+```bash
+tailscale ip -4
+```
+
+**Отключиться от tailnet**
+```bash
+tailscale down
+```
+
+**Полностью выйти из аккаунта**
+```bash
+tailscale logout
+```
+
+**Стать exit-node**
+```bash
+tailscale up --login-server=https://hscale.artemvpn.ru --advertise-exit-node
+```
+
+**Раздать подсеть (subnet router)**
+```bash
+tailscale up --login-server=https://hscale.artemvpn.ru --advertise-routes=192.168.1.0/24
+```
+
+**Использовать чужой exit-node**
+```bash
+tailscale up --login-server=https://hscale.artemvpn.ru --exit-node=<ip_или_hostname>
+```
+
+**Включить SSH через tailscale**
+```bash
+tailscale up --login-server=https://hscale.artemvpn.ru --ssh
+```
+
+**Проверка доступности узла**
+```bash
+tailscale ping <hostname_или_ip>
+```
+
+**Обновить клиент**
+```bash
+tailscale update
+```
+
+**Перезапустить демон**
+```bash
+systemctl restart tailscaled
+```
