@@ -227,3 +227,8 @@ tailscale update
 ```bash
 systemctl restart tailscaled
 ```
+
+**WINDOWS powershell**
+```bash
+tailscale login --login-server=https://hscale.artemvpn.ru
+```
