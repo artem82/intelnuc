@@ -43,6 +43,10 @@ http://kedriza.ru/US_FLEX_MINI_2.1.6.bin
 ```yaml
 http://kedriza.ru/USW_16_POE_7510.bin
 ```
+☑️ US-48-500W обновление прошивки локально https://ui.com/download/software/us-48-500w
+```yaml
+http://kedriza.ru/US8162448_7515.bin
+```
 
 
 :ballot_box_with_check: Команда скачать прямо на AP через SSH
