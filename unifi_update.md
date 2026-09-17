@@ -45,7 +45,7 @@ http://kedriza.ru/USW_16_POE_7510.bin
 ```
 ☑️ US-48-500W обновление прошивки локально https://ui.com/download/software/us-48-500w
 ```yaml
-http://kedriza.ru/US8162448_7515.bin
+http://files.artemvpn.ru/US8162448_7515.bin
 ```
 
 
