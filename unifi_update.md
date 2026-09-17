@@ -18,7 +18,7 @@ upgrade https://dl.ui.com/unifi/firmware/U7PRO/8.4.6.18068/BZ.ipq53xx_8.4.6+1806
 ```
 :ballot_box_with_check: U7 pro обновление прошивки локально https://ui.com/download/software/u7-pro
 ```yaml
-http://kedriza.ru/U7PRO8611.bin
+http://files.artemvpn.ru/U7PRO8711.bin
 ```
 :ballot_box_with_check: U6 pro обновление прошивки локально https://ui.com/download/software/u6-pro
 ```yaml
