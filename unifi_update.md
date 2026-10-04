@@ -11,6 +11,8 @@ http://files.artemvpn.ru/UCKP5_1_33.bin
 Обновление через SSH:
 ```bash
 ssh root@192.168.100.196
+```
+```bash
 curl -o /var/tmp/fwupdate.bin http://files.artemvpn.ru/UCKP5_1_33.bin
 ```
 ```bash
