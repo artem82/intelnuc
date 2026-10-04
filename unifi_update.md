@@ -2,10 +2,13 @@
 ## UNIFI Ссылки на прошивки устройств
 ☑️ UCK-G2-Plus (CloudKey G2+) обновление прошивки локально https://ui.com/download/software/uck-g2-plus
 UniFi OS - Cloud Key Gen2 Plus 5.1.33 | Sep 10, 2026
+
+> SSH включить: зайти на https://192.168.100.196 → Console Settings → Advanced → SSH ✅
+
 ```yaml
 http://files.artemvpn.ru/UCKP5_1_33.bin
 ```
-Обновление через SSH (IP устройства: 192.168.100.196):
+Обновление через SSH:
 ```bash
 ssh root@192.168.100.196
 curl -o /tmp/fwupdate.bin http://files.artemvpn.ru/UCKP5_1_33.bin
