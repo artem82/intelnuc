@@ -12,6 +12,8 @@ http://files.artemvpn.ru/UCKP5_1_33.bin
 ```bash
 ssh root@192.168.100.196
 curl -o /tmp/fwupdate.bin http://files.artemvpn.ru/UCKP5_1_33.bin
+```
+```bash
 syswrapper.sh upgrade2 &
 ```
 
