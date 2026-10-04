@@ -57,9 +57,14 @@ http://kedriza.ru/U6PLUS6754.bin
 ```yaml
 http://kedriza.ru/U7OUTDOOR.bin
 ```
+### Коммутаторы
 :ballot_box_with_check: 24POE switch обновление прошивки локально https://ui.com/download/software/us-24-250w
 ```yaml
 http://kedriza.ru/US24poe_741_gen1.bin
+```
+:ballot_box_with_check: USW-Flex-2.5G-5
+```yaml
+http:/files.artemvpn.ru/USM25G5_218.bin
 ```
 ```yaml
 http://kedriza.ru/US_FLEX_MINI_2.1.6.bin
