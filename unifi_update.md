@@ -16,8 +16,13 @@ ssh root@192.168.100.196
 ```bash
 curl -o /var/tmp/fwupdate.bin http://files.artemvpn.ru/UCKP5_1_33.bin
 ```
+Если есть, запускай с локальным файлом:
 ```bash
-syswrapper.sh upgrade2 &
+ubnt-systool fwupdate /var/tmp/fwupdate.bin
+```
+Если локальный путь не принимает, то с URL (файл уже лежит на твоём сервере):
+```bash
+ubnt-systool fwupdate http://files.artemvpn.ru/UCKP5_1_33.bin
 ```
 
 :ballot_box_with_check: U6 pro
