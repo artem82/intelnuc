@@ -64,7 +64,7 @@ http://kedriza.ru/US24poe_741_gen1.bin
 ```
 :ballot_box_with_check: USW-Flex-2.5G-5
 ```yaml
-http:/files.artemvpn.ru/USM25G5_218.bin
+http://files.artemvpn.ru/USM25G5_218.bin
 ```
 ```yaml
 http://kedriza.ru/US_FLEX_MINI_2.1.6.bin
