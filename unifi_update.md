@@ -1,6 +1,7 @@
 ## UNIFI
 ## UNIFI Ссылки на прошивки устройств
-☑️ UCK-G2-Plus (CloudKey G2+) обновление прошивки локально https://ui.com/download/software/uck-g2-plus
+☑️ UCK-G2-Plus (CloudKey G2+) обновление прошивки локально 
+https://ui.com/download/software/uck-g2-plus
 UniFi OS - Cloud Key Gen2 Plus 5.1.33 | Sep 10, 2026
 
 > SSH включить: зайти на https://192.168.100.196 → Console Settings → Advanced → SSH ✅
